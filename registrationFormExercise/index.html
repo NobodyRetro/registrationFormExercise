@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration Form</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+
+  <body>
+
+<form action="">
+<!--Header 1-->
+    <h1>Registration Form</h1>
+
+<!--Horizontal Break-->
+    <hr>
+
+<!--Header 3-->
+    <h3>Provide your information</h3>
+
+<!--Name text input with placeholder and required tag-->
+    <label for="name">Name*</label><br>
+    <input 
+      type="text" 
+      name="name" 
+      id="name" 
+      placeholder="Name" 
+      required
+    ><br><br>
+
+<!--Email text input with placeholder and required tag-->
+    <label for="email">Email*</label><br>
+    <input 
+      type="text" 
+      name="email" 
+      id="email"
+      placeholder="Email"
+      required
+    ><br><br>
+
+<!--Phone Number number input with size attribute-->
+    <label for="phone">Telephone</label><br>
+    <input 
+      type="number"
+      size="3"
+    >
+    -
+    <input 
+      type="number"
+      size="3"
+    >
+    -
+    <input 
+      type="number"
+      size="4"
+    ><br><br><br>
+
+<!--Date of Birth with date input and required tag-->
+  <label for="dob">DOB*</label><br>
+  <input 
+    type="date" 
+    name="dob" 
+    id="dob"
+    required
+    ><br><br> 
+
+<!--Gender Radio Button-->
+    <label for="gender">Gender</label><br>
+
+    <input type="radio" name="gender" id="male" value="male">
+    <label for="male">Male</label>
+
+    <input type="radio" name="gender" id="female" value="female">
+    <label for="female">Female</label>
+
+    <input type="radio" name="gender" id="other" value="other">
+    <label for="other">Other</label>
+
+    <br><br>
+
+<!--Household Size number input, min/max, and size attribute-->
+    <label for="houseSize">Household Size</label><br>
+    <input 
+      type="number"
+      name="houseSize"
+      id="houseSize"
+      min="1"
+      max="100"
+      size="10"
+    ><br><br>
+
+<!--Annual Income datalist-->
+    <label for="income">Annual Income</label><br>
+    <select name="income" id="income">
+      <option value="lessThan40k">Less than $40K</option>
+      <option value="moreThan40k">More than $40K</option>
+    </select><br><br>
+
+<!--Message box with sizing-->
+    <label for="message">Message</label><br>
+    <textarea 
+      name="message" 
+      id="message" 
+      cols="30" 
+      rows="3">
+    </textarea><br><br>
+
+<!--Password with password input, placeholder text, and required tag-->
+    <label for="password">Password*</label><br>
+    <input 
+      type="password" 
+      name="password" 
+      id="password"
+      placeholder="password"
+      required
+    ><br><br>
+
+<!--Confirm password with password input, placeholder text, and required tag-->
+    <label for="confirmPassword">Confirm Password*</label><br>
+    <input 
+      type="password" 
+      name="password" 
+      id="password"
+      placeholder="confirm password"
+      required
+    ><br><br>
+
+<!--Checkbox input with link and required tag-->
+    <input 
+      type="checkbox" 
+      name="tos" 
+      id="tos"
+      required
+    >
+    <label for="tos">By signing up, you agree to the <a href="">Terms of Service</a></label>
+
+    <br><br>
+
+<!--Submit Button-->
+    <input 
+      type="submit" 
+      value="Submit"
+    >
+</form>
+    <script src="" async defer></script>
+  </body>
+</html>
